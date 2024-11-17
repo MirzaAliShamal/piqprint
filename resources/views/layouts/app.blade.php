@@ -1,36 +1,53 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+<html lang="en">
+<head>
+    <meta name="baseURL" content="{{ url('/') }}">
+    <meta name="csrfToken" content="{{ csrf_token() }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PiqPrint</title>
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+    <link rel="icon" href="{{ asset('images/piq-print-icon-32x32.png') }}" sizes="32x32" />
+    <link rel="icon" href="{{ asset('images/piq-print-icon-192x192.png') }}" sizes="192x192" />
+    <link rel="apple-touch-icon" href="{{ asset('images/piq-print-icon-180x180.png') }}" />
+    <meta name="msapplication-TileImage" content="{{ asset('images/piq-print-icon-270x270.png') }}" />
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-        <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-    </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
-            @include('layouts.navigation')
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/cropper.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css?v='.rand()) }}">
+    <link rel="stylesheet" href="{{ asset('css/responsive.css?v='.rand()) }}">
 
-            <!-- Page Heading -->
-            @if (isset($header))
-                <header class="bg-white dark:bg-gray-800 shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endif
-
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
+    @yield('css')
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container position-relative h-100">
+            @yield('content')
         </div>
-    </body>
+    </div>
+    {{-- Loader --}}
+    <div class="loading" style="display: none;">
+        <span class="text-red bt5-16-semibold">Loading...</span>
+        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-red" style="width: 25%"></div>
+        </div>
+    </div>
+
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('js/cropper.min.js') }}"></script>
+    <script src="{{ asset('js/caman.min.js') }}"></script>
+    <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
+    <script>
+        const pusher = new Pusher('39c835d1689e46a79205', {
+            cluster: 'ap2',
+            encrypted: true
+        });
+    </script>
+
+    @yield('js')
+</body>
 </html>

@@ -1,7 +1,9 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SessionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,18 +16,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
 
 require __DIR__.'/auth.php';
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/generate-qr', [HomeController::class, 'generateQr'])->name('generate.qr');
+
+Route::get('/session/{uniqueId}', [HomeController::class, 'session'])->name('session');
+
+Route::prefix('/session/{uniqueId}')->middleware('check.session')->group(function () {
+    Route::get('/end', [SessionController::class, 'end'])->name('end');
+    Route::get('/photos', [SessionController::class, 'photos'])->name('photos');
+    Route::post('/upload', [SessionController::class, 'upload'])->name('upload');
+    Route::get('/photo/{photoId}', [SessionController::class, 'photo'])->name('photo');
+    Route::post('/edited/{photoId}', [SessionController::class, 'edited'])->name('edited');
+    Route::get('/checkout', [SessionController::class, 'checkout'])->name('checkout');
+});
+

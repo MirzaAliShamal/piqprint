@@ -1,0 +1,45 @@
+@media(min-width: 576px) {
+    header,
+    footer {
+        max-width: 540px;
+    }
+}
+
+@media(min-width: 768px) {
+    header,
+    footer {
+        max-width: 720px;
+    }
+}
+
+@media(min-width: 992px) {
+    header,
+    footer {
+        max-width: 960px;
+    }
+}
+
+@media(min-width: 1200px) {
+    header,
+    footer {
+        max-width: 1140px;
+    }
+}
+
+@media(min-width: 1400px) {
+    header,
+    footer {
+        max-width: 1320px;
+    }
+}
+
+
+
+
+@media(max-width: 780px) {
+    .header-middle .header-logo {
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 51px;
+    }
+}

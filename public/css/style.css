@@ -1,0 +1,972 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    color: #252F2C;
+}
+
+/* Colors */
+
+.text-white {
+    color: #ffffff;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.text-light {
+    color: #E2E1DA;
+}
+
+.bg-light {
+    background-color: #E2E1DA;
+}
+
+.text-green {
+    color: #465A54;
+}
+
+.bg-green {
+    background-color: #465A54;
+}
+
+.text-red {
+    color: #FF6A5F;
+}
+
+.bg-red {
+    background-color: #FF6A5F;
+}
+
+.text-dark {
+    color: #252F2C;
+}
+
+.bg-dark {
+    background-color: #252F2C;
+}
+
+/* Colors */
+
+/* Typography */
+
+.title-40-light {
+    font-family: "Figtree", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 60px;
+}
+
+.title-40-regular {
+    font-family: "Figtree", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.title-40-medium {
+    font-family: "Figtree", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+.title-40-semibold {
+    font-family: "Figtree", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.title-40-bold {
+    font-family: "Figtree", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.h1-50-light {
+    font-family: "Figtree", sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 75px;
+}
+
+.h1-50-regular {
+    font-family: "Figtree", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 75px;
+}
+
+.h1-50-medium {
+    font-family: "Figtree", sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 75px;
+}
+
+.h1-50-semibold {
+    font-family: "Figtree", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 75px;
+}
+
+.h1-50-bold {
+    font-family: "Figtree", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 75px;
+}
+
+.h2-46-light {
+    font-family: "Figtree", sans-serif;
+    font-size: 46px;
+    font-weight: 300;
+    line-height: 69px;
+}
+
+.h2-46-regular {
+    font-family: "Figtree", sans-serif;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 69px;
+}
+
+.h2-46-medium {
+    font-family: "Figtree", sans-serif;
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 69px;
+}
+
+.h2-46-semibold {
+    font-family: "Figtree", sans-serif;
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 69px;
+}
+
+.h2-46-bold {
+    font-family: "Figtree", sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 69px;
+}
+
+.h3-42-light {
+    font-family: "Figtree", sans-serif;
+    font-size: 43px;
+    font-weight: 300;
+    line-height: 63px;
+}
+
+.h3-42-regular {
+    font-family: "Figtree", sans-serif;
+    font-size: 43px;
+    font-weight: 400;
+    line-height: 63px;
+}
+
+.h3-42-medium {
+    font-family: "Figtree", sans-serif;
+    font-size: 43px;
+    font-weight: 500;
+    line-height: 63px;
+}
+
+.h3-42-semibold {
+    font-family: "Figtree", sans-serif;
+    font-size: 43px;
+    font-weight: 600;
+    line-height: 63px;
+}
+
+.h3-42-bold {
+    font-family: "Figtree", sans-serif;
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 63px;
+}
+
+.h4-38-light {
+    font-family: "Figtree", sans-serif;
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 57px;
+}
+
+.h4-38-regular {
+    font-family: "Figtree", sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 57px;
+}
+
+.h4-38-medium {
+    font-family: "Figtree", sans-serif;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 57px;
+}
+
+.h4-38-semibold {
+    font-family: "Figtree", sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 57px;
+}
+
+.h4-38-bold {
+    font-family: "Figtree", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 57px;
+}
+
+.h5-34-light {
+    font-family: "Figtree", sans-serif;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 51px;
+}
+
+.h5-34-regular {
+    font-family: "Figtree", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 51px;
+}
+
+.h5-34-medium {
+    font-family: "Figtree", sans-serif;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 51px;
+}
+
+.h5-34-semibold {
+    font-family: "Figtree", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 51px;
+}
+
+.h5-34-bold {
+    font-family: "Figtree", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 51px;
+}
+
+.h6-30-light {
+    font-family: "Figtree", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 45px;
+}
+
+.h6-30-regular {
+    font-family: "Figtree", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+}
+
+.h6-30-medium {
+    font-family: "Figtree", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.h6-30-semibold {
+    font-family: "Figtree", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+}
+
+.h6-30-bold {
+    font-family: "Figtree", sans-s7r26;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.h7-26-light {
+    font-family: "Figtree", sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 39px;
+}
+
+.h7-26-regular {
+    font-family: "Figtree", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 39px;
+}
+
+.h7-26-medium {
+    font-family: "Figtree", sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 39px;
+}
+
+.h7-26-semibold {
+    font-family: "Figtree", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 39px;
+}
+
+.h7-26-bold {
+    font-family: "Figtree", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 39px;
+}
+
+.bt1-24-light {
+    font-family: "Figtree", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+}
+
+.bt1-24-regular {
+    font-family: "Figtree", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.bt1-24-medium {
+    font-family: "Figtree", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.bt1-24-semibold {
+    font-family: "Figtree", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.bt1-24-bold {
+    font-family: "Figtree", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.bt2-22-light {
+    font-family: "Figtree", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 33px;
+}
+
+.bt2-22-regular {
+    font-family: "Figtree", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+}
+
+.bt2-22-medium {
+    font-family: "Figtree", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 33px;
+}
+
+.bt2-22-semibold {
+    font-family: "Figtree", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+}
+
+.bt2-22-bold {
+    font-family: "Figtree", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33px;
+}
+
+.bt3-20-light {
+    font-family: "Figtree", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.bt3-20-regular {
+    font-family: "Figtree", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.bt3-20-medium {
+    font-family: "Figtree", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.bt3-20-semibold {
+    font-family: "Figtree", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.bt3-20-bold {
+    font-family: "Figtree", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.bt4-18-light {
+    font-family: "Figtree", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+.bt4-18-regular {
+    font-family: "Figtree", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.bt4-18-medium {
+    font-family: "Figtree", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.bt4-18-semibold {
+    font-family: "Figtree", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+.bt4-18-bold {
+    font-family: "Figtree", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.bt5-16-light {
+    font-family: "Figtree", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.bt5-16-regular {
+    font-family: "Figtree", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.bt5-16-medium {
+    font-family: "Figtree", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.bt5-16-semibold {
+    font-family: "Figtree", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.bt5-16-bold {
+    font-family: "Figtree", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.c1-14-light {
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.c1-14-regular {
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.c1-14-medium {
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.c1-14-semibold {
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+}
+
+.c1-14-bold {
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.c2-12-light {
+    font-family: "Figtree", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.c2-12-regular {
+    font-family: "Figtree", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.c2-12-medium {
+    font-family: "Figtree", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.c2-12-semibold {
+    font-family: "Figtree", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.c2-12-bold {
+    font-family: "Figtree", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.c3-10-light {
+    font-family: "Figtree", sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 15px;
+}
+
+.c3-10-regular {
+    font-family: "Figtree", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.c3-10-medium {
+    font-family: "Figtree", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 15px;
+}
+
+.c3-10-semibold {
+    font-family: "Figtree", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 15px;
+}
+
+.c3-10-bold {
+    font-family: "Figtree", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 15px;
+}
+/* Typography */
+
+
+/* Custom Styling */
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    background: url('../images/bg-cover.jpeg');;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.25rem 0;
+    overflow: hidden;
+}
+
+.loading {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background: #FFFFFFE5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 999;
+}
+
+.btn {
+    display: inline-block;
+    height: 40px;
+    padding: 0 2rem;
+    line-height: 37px;
+    border-radius: 15px;
+}
+
+.btn.bg-red:hover {
+    background-color: #252F2C;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 1.25rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding-right: calc(1.5rem * .5);
+    padding-left: calc(1.5rem * .5);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50.39px;
+}
+
+.header-navigator .header-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #252F2C;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-navigator i {
+    font-size: 16px;
+}
+
+.header-middle .header-logo {
+    font-family: "Figtree", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.content {
+    margin-top: calc(50px + 1.25rem);
+    height: calc(100vh - calc(50px + 3.75rem));
+    overflow-y: auto;
+}
+
+.content-with-footer {
+    height: calc(100vh - calc(100px + 7.25rem));
+}
+
+.content-heading {
+    margin-bottom: 3rem;
+}
+
+.upload-wrapper .upload-photos {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 90%;
+    background-color: #f6f4f6;
+    border: 1px dashed #FF6A5F;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.photos-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    height: auto;
+}
+
+.photos-wrapper .photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.photos-wrapper .photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.photos-wrapper .photo .photo-actions {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.photos-wrapper .photo .photo-actions > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF6A5F;
+    width: 24px;
+    height: 24px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.photos-wrapper .photo .photo-actions svg {
+    width: 12px;
+    height: 12px;
+    color: #ffffff;
+}
+
+.photo-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding-right: calc(1.5rem* .5);
+    padding-left: calc(1.5rem* .5);
+}
+
+.editor-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #252F2C;
+    height: 60px;
+    width: 100%;
+    border-radius: 130px;
+    margin: 0 auto;
+}
+
+.editor-bar .editor-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.editor-bar .editor-action:hover,
+.editor-bar .editor-action.active {
+    background: #FF6A5F;
+    transition: 0.3s ease all;
+}
+
+.editor-bar .editor-action svg {
+    width: 16px;
+    height: 16px;
+}
+
+.filter-options {
+    padding-bottom: 0.25rem;
+}
+
+.filter-options .filter-thumbnails {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.filter-options .filter-thumbnails .filter-thumbnail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-options .filter-thumbnails .filter-thumbnail.active {
+    /* border: 2px solid #252F2C; */
+    opacity: 1;
+}
+
+.filter-options .filter-thumbnails .filter-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.rotate-options {
+    padding-bottom: 0.25rem;
+}
+
+.rotate-options .rotate-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.rotate-options .rotate-controls .rotate-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 100px;
+    background: #FF6A5F;
+}
+
+.rotate-options .rotate-controls .rotate-btn svg {
+    width: 16px;
+    height: 16px;
+    color: #ffffff;
+}
+
+canvas {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: contain !important;
+}
+
+.checkout-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+    width: 100%;
+    height: 100%;
+
+    background: #F6F4F2;
+    border-radius: 24px;
+    padding: 1.5rem;
+}
+
+.products-wrapper {
+    width: 100%;
+    height: 50%;
+    overflow-y: auto;
+}
+
+.products-wrapper table {
+    width: 100%;
+}
+
+.products-wrapper .delete-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF6A5F;
+    width: 24px;
+    height: 24px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.products-wrapper .delete-photo svg {
+    width: 12px;
+    height: 12px;
+    color: #ffffff;
+}
+
+.products-wrapper .photo-thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+}
+
+.products-wrapper .photo-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.payment-wrapper {
+    height: 50%;
+    width: 100%;
+}
+
+.payment-wrapper table {
+    width: 100%;
+}
